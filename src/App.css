@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-html {
-  background-color: #201c1c;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
 #root {
-  max-width: 1280px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  background-color: #1e1e1d;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #1e1e1d;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  min-width: 330px;
 }
 
 @keyframes logo-spin {
@@ -26,15 +37,29 @@ html {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo {
+  .spin {
     animation: logo-spin infinite 20s linear;
+    display: inline-block;
   }
 }
 
-.card {
-  padding: 2em;
+.contents-container {
+  max-width: 125rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 3rem;
+  position: relative;
+  top: 9rem;
 }
 
-.read-the-docs {
-  color: #888;
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 53.125em) {
+  html {
+    font-size: 50%;
+  }
 }

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poetsen: ["Poetsen One", "sans-serif"]
+        spaceMono: ["Space Mono", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"]
       }
     },
   },

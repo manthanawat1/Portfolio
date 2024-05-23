@@ -1,0 +1,34 @@
+[
+  {
+    "skill": "HTML5",
+    "path": "/images/skill/html.png"
+  },
+  {
+    "skill": "CSS3",
+    "path": "/images/skill/css.png"
+  },
+  {
+    "skill": "JavaScript",
+    "path": "/images/skill/javascript.png"
+  },
+  {
+    "skill": "TypeScript",
+    "path": "/images/skill/typescript.png"
+  },
+  {
+    "skill": "Vue.js",
+    "path": "/images/skill/vue.png"
+  },
+  {
+    "skill": "React.js",
+    "path": "/images/skill/react.png"
+  },
+  {
+    "skill": "Node",
+    "path": "/images/skill/node.png"
+  },
+  {
+    "skill": "MongoDB",
+    "path": "/images/skill/mongoDB.png"
+  }
+]
