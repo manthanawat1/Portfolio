@@ -6,6 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
 import skillsContext from "../../contexts/skill-context.json";
+import portrait from "../../images/portrait.png";
 
 function MainSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -129,7 +130,7 @@ function MainSection() {
           <div className="order-first sm:order-last sm:w-1/2 sm:h-96 inline sm:flex items-center justify-center py-[2rem] sm:py-0">
             <ImageContainer>
               <img
-                src="/images/portrait.png"
+                src={portrait}
                 alt="Thanawat Ongkhase"
               />
             </ImageContainer>
