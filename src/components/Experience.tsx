@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
-import experienceContext from "./../../contexts/experience-context.json";
+import experienceContext from "../contexts/ExperienceContext";
 
 function Experience() {
   const [scrollTriggered, setScrollTriggered] = React.useState(false);

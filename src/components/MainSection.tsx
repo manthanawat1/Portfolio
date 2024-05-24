@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
-import skillsContext from "../../contexts/skill-context.json";
+import skillsContext from "../contexts/SkillIContext";
 import portrait from "../../images/portrait.png";
 
 function MainSection() {

@@ -4,7 +4,7 @@ import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { motion } from "framer-motion";
 import ProjectDetail from "./ProjectCard";
 import ProjectInterface from "./ProjectInterface";
-import projectContext from "./../../contexts/project-context.json";
+import projectContext from "../contexts/ProjrctContext";
 
 const Projects = () => {
   const myProjects: ProjectInterface[] = projectContext;
