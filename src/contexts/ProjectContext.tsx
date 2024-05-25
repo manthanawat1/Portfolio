@@ -1,9 +1,9 @@
-import Omnifood from "../../images/thumbnails/Omnifood.png";
-import Twitter from "../../images/thumbnails/Twitter.png";
-import KFC from "../../images/thumbnails/KFC.png";
-import BMI from "../../images/thumbnails/BMI.png";
-import Gallery from "../../images/thumbnails/Gallery.png";
-import Luara from "../../images/thumbnails/Luara.png";
+import Omnifood from "../../images/thumbnails/Omnifood.jpg";
+import Twitter from "../../images/thumbnails/Twitter.jpg";
+import KFC from "../../images/thumbnails/KFC.jpg";
+import BMI from "../../images/thumbnails/BMI.jpg";
+import Gallery from "../../images/thumbnails/Gallery.jpg";
+import Luara from "../../images/thumbnails/Luara.jpg";
 
 const ProjrctContext = [
   {

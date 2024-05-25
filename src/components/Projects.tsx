@@ -4,7 +4,7 @@ import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { motion } from "framer-motion";
 import ProjectDetail from "./ProjectCard";
 import ProjectInterface from "./ProjectInterface";
-import projectContext from "../contexts/ProjrctContext";
+import projectContext from "../contexts/ProjectContext";
 
 const Projects = () => {
   const myProjects: ProjectInterface[] = projectContext;
@@ -12,7 +12,7 @@ const Projects = () => {
   const handleScrollRef = React.useRef<(() => void) | null>(null);
 
   handleScrollRef.current = () => {
-    if (!scrollTriggered && window.scrollY > 60) {
+    if (!scrollTriggered && window.scrollY > 350) {
       setScrollTriggered(true);
     }
   };
