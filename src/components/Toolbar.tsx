@@ -100,7 +100,11 @@ export default function DrawerAppBar(props: Props) {
       <CssBaseline />
       <AppBar
         component="nav"
-        sx={{ boxShadow: "none", position: "fixed" }}
+        sx={{
+          boxShadow: "none",
+          position: "fixed",
+          backgroundColor: "#1e1e1d",
+        }}
       >
         <CustomizedToolbar>
           <IconButton
