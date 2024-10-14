@@ -1,10 +1,27 @@
+import scb_protect from "../../images/experiences/scb_protect.png";
 import inet from "../../images/experiences/inet.png";
 import delta from "../../images/experiences/delta.png";
 
 const ExperienceContext = [
   {
+    company: "SCB Protect Co., Ltd.",
+    position: "Front-End Developer",
+    typePosition: "Outsource",
+    timeline: "July 2024 — December 2024",
+    address: "Bangkok, Thailand",
+    imagePath: scb_protect,
+    link: "https://www.scbprotect.co.th/",
+    responsible: [
+      "Developed complex user interfaces using HTML, CSS, JavaScript, Vue and ensured a user-friendly experience.",
+      "Conducted thorough testing to identify and resolve issues, ensuring the delivery of high-quality software.",
+      "Optimized front-end performance through effective use of GraphQL queries, reducing unnecessary data loads and enhancing site speed.",
+      "Customized and extended Sitecore components to meet specific business requirements, improving overall content management efficiency.",
+    ],
+  },
+  {
     company: "Internet Thailand Pub Co., Ltd.",
     position: "Software Engineer",
+    typePosition: "Full Time",
     timeline: "July 2021 — April 2024",
     address: "Bangkok, Thailand",
     imagePath: inet,
@@ -19,7 +36,8 @@ const ExperienceContext = [
   },
   {
     company: "Intech Delta System Co., Ltd.",
-    position: "Automation Engineer (Intern)",
+    position: "Automation Engineer",
+    typePosition: "Intern",
     timeline: "December 2020 — April 2021",
     address: "Nonthaburi, Thailand",
     imagePath: delta,

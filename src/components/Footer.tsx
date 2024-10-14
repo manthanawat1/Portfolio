@@ -10,7 +10,7 @@ function Footer() {
           for visiting!
         </p>
         <nav className="pt-[3rem] text-[1.8rem]">
-          <p className="text-center pb-4 uppercase text-[#8b8b8b] font-light">
+          <p className="text-center pb-4 uppercase text-[#8b8b8b] font-medium">
             Navigation
           </p>
           <NavigationContainer className="flex space-x-8 justify-center font-light">

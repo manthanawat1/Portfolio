@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { motion } from "framer-motion";
 import ProjectDetail from "./ProjectCard";
-import ProjectInterface from "./ProjectInterface";
+import ProjectInterface from "../Interfaces/ProjectInterface";
 import projectContext from "../contexts/ProjectContext";
 
 const Projects = () => {
@@ -12,7 +12,7 @@ const Projects = () => {
   const handleScrollRef = React.useRef<(() => void) | null>(null);
 
   handleScrollRef.current = () => {
-    if (!scrollTriggered && window.scrollY > 350) {
+    if (!scrollTriggered && window.scrollY > 430) {
       setScrollTriggered(true);
     }
   };
@@ -31,12 +31,12 @@ const Projects = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.7,
+        duration: 1.1,
       },
     },
     hidden: {
       opacity: 0,
-      y: 150,
+      y: 600,
     },
   };
 
@@ -59,7 +59,7 @@ const Projects = () => {
             }}
           />
         </h2>
-        <div className="pt-[9rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-24 sm:gap-20 lg:gap-24 ">
+        <div className="px-14 lg:px-0 pt-[9rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-24 sm:gap-20 lg:gap-24">
           {myProjects.map((item, index) => (
             <ProjectDetail
               key={index}

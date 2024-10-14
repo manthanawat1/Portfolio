@@ -36,7 +36,7 @@ const ProjectContext = [
     projectName: "Pricing Card Cloning",
     detail:
       "A pricing package card clone using Tailwind CSS to demonstrate layout and styling capabilities.",
-    stack: ["HTML5", "CSS3", "Tailwind"],
+    stack: ["HTML5", "CSS3", "Tailwind CSS"],
     imagePath: PricingCard,
     link: "https://card-cloning-tailwind-thanawat.netlify.app/",
   },
@@ -44,7 +44,7 @@ const ProjectContext = [
     projectName: "BMI Calculator",
     detail:
       "A website BMI calculator designed to help users quickly determine their body mass index, with advice text tailored by gender.",
-    stack: ["TypeScript", "React", "Tailwind", "MUI"],
+    stack: ["TypeScript", "React.js", "Tailwind CSS", "Material UI"],
     imagePath: BMI,
     link: "https://bmi-cal-thanawat.netlify.app/",
   },
@@ -52,7 +52,7 @@ const ProjectContext = [
     projectName: "Mercy Shop",
     detail:
       "An e-commerce practice project utilizing fetch API and Redux management with lazy loading to fetch limited API data.",
-    stack: ["TypeScript", "Next", "Redux", "Tailwind"],
+    stack: ["TypeScript", "Next.js", "Redux", "Tailwind CSS"],
     imagePath: FetchApiNext,
     link: "https://fetch-product-redux-thanawat.netlify.app/",
   },
@@ -60,7 +60,7 @@ const ProjectContext = [
     projectName: "Gallery",
     detail:
       "A photo gallery website that allows users to view big photos and select smaller photos from a bottom bar.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Vue"],
+    stack: ["HTML5", "CSS3", "JavaScript", "Vue.js"],
     imagePath: Gallery,
     link: "https://photo-gallery-thanawat.netlify.app/",
   },
@@ -68,7 +68,7 @@ const ProjectContext = [
     projectName: "Luara Closet Cloning",
     detail:
       "A clone of the Luara Closet online store, featuring a sleek design and interactive shopping experience.",
-    stack: ["TypeScript", "Vue", "Vuetify"],
+    stack: ["TypeScript", "Vue.js", "Vuetify"],
     imagePath: Luara,
     link: "https://luara-closet-thanawat.netlify.app/#/",
   },

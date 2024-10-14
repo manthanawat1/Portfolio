@@ -12,6 +12,7 @@
 #root {
   width: 100vw;
   background-color: #1e1e1d;
+  min-width: 330px;
 }
 
 html {
@@ -25,7 +26,6 @@ body {
   line-height: 1;
   font-weight: 400;
   scroll-behavior: smooth;
-  min-width: 330px;
 }
 
 @keyframes logo-spin {

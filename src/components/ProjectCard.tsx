@@ -1,9 +1,7 @@
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { styled } from "@mui/material/styles";
-import { CardActionArea } from "@mui/material";
-import ProjectInterface from "./ProjectInterface";
+import ProjectInterface from "../Interfaces/ProjectInterface";
 
 export default function ProjectCard({
   projectName,
@@ -13,38 +11,44 @@ export default function ProjectCard({
   link,
 }: ProjectInterface) {
   return (
-    <CustomizedCard onClick={() => window.open(link)}>
-      <CardActionArea className="h-full">
-        <CustomizedCardMedia image={imagePath} />
-        <CustomizedCardContent>
-          <div>
-            <span className="font-poppins font-medium text-[1.3rem] text-[#8e8e8e] uppercase">
-              Click here to visit!
-            </span>
-            <h2 className="font-poppins leading-[3rem] font-bold text-4xl text-[#f8f8f8]">
-              {projectName}
-            </h2>
-            <div className="py-6 font-poppins leading-[2.5rem] font-light text-2xl text-[#c6c6c6]">
-              {detail}
-            </div>
-          </div>
-          <div className="pt-3 pb-3 mt-auto flex flex-wrap gap-[1rem]">
-            {stack.map((item, index) => (
-              <CustomizedChipContent
-                key={index}
-                className="font-poppins tracking-wider rounded-full py-1 px-4"
-              >
-                {item}
-              </CustomizedChipContent>
-            ))}
-          </div>
-        </CustomizedCardContent>
-      </CardActionArea>
+    <CustomizedCard
+      className="bg-[#2a2a2a]"
+      onClick={() => window.open(link)}>
+      <CardMedia
+        component="img"
+        image={imagePath}
+        sx={{
+          height: "auto",
+          width: "100%",
+          objectFit: "contain",
+        }}
+      />
+      <div className="px-8 pt-8">
+        <span className="font-poppins font-medium text-[1.3rem] text-[#8e8e8e] uppercase">
+          Click here to visit!
+        </span>
+        <h2 className="font-poppins leading-[3rem] font-bold text-4xl text-[#f8f8f8]">
+          {projectName}
+        </h2>
+        <div className="py-6 font-poppins leading-[2.5rem] font-light text-2xl text-[#c6c6c6]">
+          {detail}
+        </div>
+      </div>
+      <div className="px-8 pt-6 pb-8 mt-auto flex flex-wrap gap-[1rem]">
+        {stack.map((item, index) => (
+          <CustomizedChipContent
+            key={index}
+            className="font-poppins tracking-wider rounded-full py-1 px-4">
+            {item}
+          </CustomizedChipContent>
+        ))}
+      </div>
     </CustomizedCard>
   );
 }
 
 const CustomizedCard = styled(Card)`
+  background-color: #2a2a2a;
   border: 2px solid #17a76f;
   border-radius: 24px;
   overflow-wrap: break-word;
@@ -53,26 +57,14 @@ const CustomizedCard = styled(Card)`
   box-sizing: border-box;
   max-width: 100%;
   box-shadow: 0px 9px 30px #09432c;
+  transition: transform 0.2s ease-in;
 
   &:hover {
+    border: 2px solid #39d89b;
+    cursor: pointer;
     box-shadow: 0 0 0 2px #09432c, 8px 8px 0 0 #09432c;
-    transform: scale(1.01);
-    transition: transform 0.2s ease-in;
+    transform: scale(1.04);
   }
-`;
-
-const CustomizedCardMedia = styled(CardMedia)`
-  height: 20rem;
-  width: 100%;
-  object-fit: cover;
-`;
-
-const CustomizedCardContent = styled(CardContent)`
-  background-color: #2a2a2a;
-  height: calc(100% - 20rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 `;
 
 const CustomizedChipContent = styled("span")({

@@ -8,7 +8,7 @@ function Experience() {
   const handleScrollRef = React.useRef<(() => void) | null>(null);
 
   handleScrollRef.current = () => {
-    if (!scrollTriggered && window.scrollY > 1500) {
+    if (!scrollTriggered && window.scrollY > 1300) {
       setScrollTriggered(true);
     }
   };
@@ -27,12 +27,12 @@ function Experience() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
+        duration: 1.7,
       },
     },
     hidden: {
       opacity: 0,
-      y: 200,
+      y: 1500,
     },
   };
   return (
@@ -42,12 +42,12 @@ function Experience() {
       animate={scrollTriggered ? "visible" : "hidden"}
       id="experience"
     >
-      <div className="mt-[20rem] mb-[10rem] sm:mb-0">
+      <div className="px-14 sm:px-0 mt-[20rem] mb-[10rem] sm:mb-0">
         <h2 className="text-center text-7xl sm:text-8xl font-bold font-spaceMono">
           Experience
           <span className="spin">&#x2B50;</span>
         </h2>
-        <div className="pt-[6rem] sm:pt-[7rem]">
+        <div className="pt-[10rem]">
           {experienceContext.map((item, index) => (
             <ExperienceCard
               key={index}
