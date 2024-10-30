@@ -15,7 +15,7 @@ const ExperienceContext = [
       "Developed complex user interfaces using HTML, CSS, JavaScript, Vue and ensured a user-friendly experience.",
       "Conducted thorough testing to identify and resolve issues, ensuring the delivery of high-quality software.",
       "Optimized front-end performance through effective use of GraphQL queries, reducing unnecessary data loads and enhancing site speed.",
-      "Customized and extended Sitecore components to meet specific business requirements, improving overall content management efficiency.",
+      "Investigated and resolved production issues efficiently, maintaining seamless system functionality and minimizing impact on end users.",
     ],
   },
   {
